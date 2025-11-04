@@ -21,11 +21,37 @@ $NewZealand = new Country("Nouvelle-Zélande", "Wellington", 5.17, "Océanie");
 
 $countries = [$Inde, $Usa, $France, $Madagascar, $NewZealand];
 
+// foreach($countries as $country)
+// {
+//     echo $country->getInfo();
+// }
+
+echo "Tableau de pays: \n\n";
+
 foreach($countries as $country)
 {
-    echo $country->getInfo();
+    echo $country->getName() . "\n";
 }
 
-$Uk = new DevelopedCountry("Royaume-Uni", "Londres", 68.35, "Europe", 3.38);
+// $Uk = new DevelopedCountry("Royaume-Uni", "Londres", 68.35, "Europe", 3.38);
 
-echo $Uk->getInfo();
+// echo "\n\n";
+
+// echo $Uk->getInfo();
+
+echo "\n\n";
+
+echo "Pays du tableau ayant une population supérieure à 100 millions d'habitants: \n\n";
+
+displayPopulous($countries);
+
+function displayPopulous($countries)
+{
+    foreach($countries as $country)
+    {
+        if($country->isPopulous())
+        {
+            echo $country->getName() . "\n";
+        }
+    }
+}

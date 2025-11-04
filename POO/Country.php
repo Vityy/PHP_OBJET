@@ -20,6 +20,18 @@ class Country
         return "Le pays a pour nom " . $this->getName() . " , sa capitale est " . $this->getCapital() . " , sa population est de " . $this->getPopulation() . " millions d'habitants et il se trouve sur le continent " . $this->getContinent() . ".\n\n";
     }
 
+    public function isPopulous()
+    {
+        if($this->getPopulation() > 100)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public function getName()
     {
         return $this->name;
