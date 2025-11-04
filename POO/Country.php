@@ -17,7 +17,7 @@ class Country
 
     public function getInfo()
     {
-        return "Le pays a pour nom " . $this->name . " , sa capitale est " . $this->capital . " , sa population est de " . $this->population . " millions d'habitants et il se trouve sur le continent " . $this->continent . ".\n\n";
+        return "Le pays a pour nom " . $this->getName() . " , sa capitale est " . $this->getCapital() . " , sa population est de " . $this->getPopulation() . " millions d'habitants et il se trouve sur le continent " . $this->getContinent() . ".\n\n";
     }
 
     public function getName()
