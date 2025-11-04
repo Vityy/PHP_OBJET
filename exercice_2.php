@@ -1,9 +1,10 @@
 <?php
 
 $anneesNaissance = [2010, 1994, 1957, 2017, 2003, 1998, 1930, 1918, 1945, 2023];
+// $anneesNaissance = [2026, 2029];
 
-$anneeMin = 2025;
-$anneeMax = 0;
+$anneeMin = $anneesNaissance[0];
+$anneeMax = $anneesNaissance[0];
 $agesPairs = 0;
 
 foreach($anneesNaissance as $anneeNaissance)
