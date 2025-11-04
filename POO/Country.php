@@ -7,7 +7,7 @@ class Country
     protected $population;
     protected $continent;
 
-    function __construct($name, $capital, $population, $continent)
+    public function __construct($name, $capital, $population, $continent)
     {
         $this->name = $name;
         $this->capital = $capital;
@@ -15,8 +15,48 @@ class Country
         $this->continent = $continent;
     }
 
-    function getInfo()
+    public function getInfo()
     {
         return "Le pays a pour nom " . $this->name . " , sa capitale est " . $this->capital . " , sa population est de " . $this->population . " millions d'habitants et il se trouve sur le continent " . $this->continent . ".\n\n";
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getCapital()
+    {
+        return $this->capital;
+    }
+
+    public function setCapital($capital)
+    {
+        $this->capital = $capital;
+    }
+
+    public function getPopulation()
+    {
+        return $this->population;
+    }
+
+    public function setPopulation($population)
+    {
+        $this->nom = $population;
+    }
+
+    public function getContinent()
+    {
+        return $this->continent;
+    }
+
+    public function setContinent($continent)
+    {
+        $this->continent = $continent;
     }
 }

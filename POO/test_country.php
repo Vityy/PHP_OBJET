@@ -12,3 +12,7 @@ echo $Inde->getInfo();
 echo $Usa->getInfo();
 echo $France->getInfo();
 echo $Madagascar->getInfo();
+
+// echo $Madagascar->getContinent() . "\n";
+// echo $Madagascar->setContinent("Océanie");
+// echo $Madagascar->getContinent() . "\n";
