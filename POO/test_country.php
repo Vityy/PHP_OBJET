@@ -2,6 +2,7 @@
 
 header('Content-type: text/plain');
 require_once('Country.php');
+require_once('DevelopedCountry.php');
 
 $Inde = new Country("Inde", "New Dheli", 1438.07, "Asie");
 $Usa = new Country("Etats-Unis", "Washington D.C", 343.48, "Amérique");
@@ -24,3 +25,7 @@ foreach($countries as $country)
 {
     echo $country->getInfo();
 }
+
+$Uk = new DevelopedCountry("Royaume-Uni", "Londres", 68.35, "Europe", 3.38);
+
+echo $Uk->getInfo();
