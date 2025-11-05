@@ -2,17 +2,17 @@
 
 class Country
 {
-    protected $name;
-    protected $capital;
-    protected $population;
-    protected $continent;
+    private $name;
+    private $capital;
+    private $population;
+    private $continent;
 
     public function __construct($name, $capital, $population, $continent)
     {
-        $this->name = $name;
-        $this->capital = $capital;
-        $this->population = $population;
-        $this->continent = $continent;
+        $this->setName($name);
+        $this->setCapital($capital);
+        $this->setPopulation($population);
+        $this->setContinent($continent);
     }
 
     public function getInfo()
@@ -59,7 +59,7 @@ class Country
 
     public function setPopulation($population)
     {
-        $this->nom = $population;
+        $this->population = $population;
     }
 
     public function getContinent()

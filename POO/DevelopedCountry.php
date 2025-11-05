@@ -4,15 +4,12 @@ require_once('Country.php');
 
 class DevelopedCountry extends Country
 {
-    protected $gdp;
+    private $gdp;
 
     public function __construct($name, $capital, $population, $continent, $gdp)
     {
-        $this->name = $name;
-        $this->capital = $capital;
-        $this->population = $population;
-        $this->continent = $continent;
-        $this->gdp = $gdp;
+        parent::__construct($name, $capital, $population, $continent);
+        $this->setGdp($gdp);
     }
 
     public function getInfo()
