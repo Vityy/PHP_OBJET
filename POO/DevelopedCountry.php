@@ -14,12 +14,11 @@ class DevelopedCountry extends Country
 
     public function getInfo()
     {
-        return "Le pays a pour nom " . $this->getName()
-        . " , sa capitale est " . $this->getCapital()
-        . " , sa population est de " . $this->getPopulation()
-        . " millions d'habitants, il se trouve sur le continent " . $this->getContinent()
-        . " et a un PIB de " . $this->getGdp()
-        . " milliards de dollars"
+        return "Nom: " . $this->getName()
+        . ", Capitale: " . $this->getCapital()
+        . ", Population: " . $this->getPopulation() . " millions d'habitants"
+        . ", Continent: " . $this->getContinent()
+        . ", PIB: " . $this->getGdp() . " milliards de dollars"
         . ".\n\n";
     }
 

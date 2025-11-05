@@ -1,7 +1,6 @@
 <?php
 
 header('Content-type: text/plain');
-require_once('Country.php');
 require_once('DevelopedCountry.php');
 
 $Inde = new Country("Inde", "New Dheli", 1438.07, "Asie");
@@ -30,14 +29,14 @@ echo "Tableau de pays: \n\n";
 
 foreach($countries as $country)
 {
-    echo $country->getName() . "\n";
+    echo $country->getInfo() . "\n";
 }
 
-// $Uk = new DevelopedCountry("Royaume-Uni", "Londres", 68.35, "Europe", 3.38);
+$Uk = new DevelopedCountry("Royaume-Uni", "Londres", 68.35, "Europe", 3.38);
 
 // echo "\n\n";
 
-// echo $Uk->getInfo();
+echo $Uk->getInfo();
 
 echo "\n\n";
 
